@@ -1,0 +1,54 @@
+{
+  "name": "amplify-abstractions-example",
+  "version": "0.1.0",
+  "bin": {
+    "amplify-abstractions-example": "lib/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "watch": "cdk watch",
+    "clean": "npm run clean:build && npm run clean:deps && npm run clean:cdk",
+    "clean:deps": "rimraf node_modules package-lock.json",
+    "clean:build": "rimraf lib",
+    "clean:cdk": "rimraf cdk.out",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@aws-amplify/auth-construct-alpha": "^0.6.0",
+    "@aws-amplify/backend-cli": "^0.12.0",
+    "@aws-amplify/data-schema": "^0.16.2",
+    "@aws-amplify/graphql-api-construct": "^1.8.1",
+    "@aws-appsync/utils": "^1.7.0",
+    "@aws-cdk/aws-amplify-alpha": "^2.138.0-alpha.0",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.1.1",
+    "@types/aws-lambda": "^8.10.137",
+    "@types/jest": "^29.5.12",
+    "@types/node": "20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "aws-cdk": "2.138.0",
+    "cdk-monitoring-constructs": "^7.8.0",
+    "esbuild": "^0.19.7",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.4.3",
+    "typescript-eslint": "^7.7.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.138.0",
+    "constructs": "^10.3.0",
+    "source-map-support": "^0.5.21"
+  }
+}
