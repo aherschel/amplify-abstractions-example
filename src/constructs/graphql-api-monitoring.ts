@@ -18,7 +18,7 @@ export class GraphqlApiMonitoring extends Construct {
   constructor(scope: Construct, id: string, props: GraphqlApiMonitoringProps) {
     super(scope, id);
 
-    this.monitoring = new MonitoringFacade(scope, 'MonitoringFacade');
+    this.monitoring = new MonitoringFacade(scope, 'GraphqlApiDashboard');
 
     this.monitoring.addMediumHeader('Amplify Backend');
     if (props.api) this.setupApiMonitoring(props.api);

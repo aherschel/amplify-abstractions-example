@@ -9,7 +9,7 @@
     "test": "jest",
     "cdk": "cdk",
     "synth": "cdk synth",
-    "deploy": "cdk deploy",
+    "deploy": "cdk deploy --require-approval never --all",
     "watch": "cdk watch",
     "clean": "npm run clean:build && npm run clean:deps && npm run clean:cdk",
     "clean:deps": "rimraf node_modules package-lock.json",

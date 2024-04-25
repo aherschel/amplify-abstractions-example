@@ -1,7 +1,7 @@
 import type { Schema } from '../schema';
 import { handler } from './echo';
 
-type HandlerEvent =  Schema['echo']['functionHandler']['arguments'];
+type HandlerEvent = Schema['echo']['functionHandler']['arguments'];
 
 describe('EchoFunction', () => {
   it('can be invoked', async () => {
