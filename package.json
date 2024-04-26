@@ -20,9 +20,9 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@aws-amplify/auth-construct-alpha": "^0.6.0",
+    "@aws-amplify/auth-construct-alpha": "^0.6.1",
     "@aws-amplify/backend-cli": "^0.12.0",
-    "@aws-amplify/data-schema": "^0.16.2",
+    "@aws-amplify/data-schema": "^0.17.1",
     "@aws-amplify/graphql-api-construct": "^1.8.1",
     "@aws-appsync/utils": "^1.7.0",
     "@aws-cdk/aws-amplify-alpha": "^2.138.0-alpha.0",
