@@ -2,3 +2,4 @@ node_modules
 lib
 .cdk.staging
 cdk.out
+coverage
